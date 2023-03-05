@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../components/buttom-left.dart';
-import '../components/view_Temp.dart';
+import '../src/components/buttom-left.dart'rt';
+import '../src/components/view_Temp.dart'rt';
 
 class HomeStyles extends StatelessWidget {
   const HomeStyles({super.key});

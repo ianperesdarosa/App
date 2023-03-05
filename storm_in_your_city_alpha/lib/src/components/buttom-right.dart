@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../pages/home.dart';
+import '../../pages/home.dart'art';
 
 class ButtomRight extends StatelessWidget {
   const ButtomRight({super.key});

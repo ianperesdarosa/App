@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:storm_in_your_city_alpha/src/pages/home.dart';
+import 'package:storm_in_your_city_alpha/pages/home.dart';
 
-import '../src/pages/login_Page.dart'rt';
+import '../../pages/login_Page.dart';
 
 class Controller extends StatelessWidget {
   const Controller({Key? key}) : super(key: key);

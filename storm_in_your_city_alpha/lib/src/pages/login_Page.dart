@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../components/buttom-right.dart';
+import '../src/components/buttom-right.dart'rt';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
