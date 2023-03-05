@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import '../components/buttom-right.dart';
 
-import '../src/components/buttom-right.dart'rt';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
+    return Scaffold(
+        body: ListView(
       children: [
         SizedBox(
           width: 220,
@@ -53,6 +54,7 @@ class LoginPage extends StatelessWidget {
           ),
         ),
       ],
-    );
+    ),
+      );
   }
 }

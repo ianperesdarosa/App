@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-
-import '../../pages/home.dart'art';
-
 class ButtomRight extends StatelessWidget {
   const ButtomRight({super.key});
 
@@ -17,9 +14,7 @@ class ButtomRight extends StatelessWidget {
             color: Colors.blue,
             ),
             child: IconButton(onPressed: () {
-            Navigator.of(context).push(MaterialPageRoute(builder: (context) => const Style(),
-                ),
-              );
+              Navigator.pushNamed(context, '/page');
             }, 
             icon:const Icon(Icons.arrow_forward, color: Colors.white,size: 35.0,)),
           ),

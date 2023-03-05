@@ -14,6 +14,7 @@ class ButtomLeft extends StatelessWidget {
             height: 60.0,
               child: IconButton(onPressed: () {
                 Navigator.pop(context);
+                
                 }, icon:const Icon(Icons.arrow_back, color: Colors.white,size: 35.0,),
               ),
             ),

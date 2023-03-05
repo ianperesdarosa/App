@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import '../components/buttom-left.dart';
+import '../components/view_Temp.dart';
 
-import '../src/components/buttom-left.dart'rt';
-import '../src/components/view_Temp.dart'rt';
+
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -22,26 +23,25 @@ class Style extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
+    return Scaffold(
         body: Stack(
       children: [
         SizedBox(
           width: double.infinity,
           height: double.infinity,
-          child: Image.asset('assets/images/back-chuva.jpg', fit: BoxFit.cover,),
-        ),Container(
+          child: Image.asset('assets/images/back-chuva.jpg', fit: BoxFit.cover,
+          ), 
+        ),
+          Container(
           width: double.infinity,
           height: double.infinity,
           decoration: const BoxDecoration(
-            color: Color.fromRGBO(0, 0, 0, 0.380)
+            color: Color.fromRGBO(0, 0, 0, 0.450)
           ),
         ),
-        const Home(),
-        ],
+          const Home(),
+          ],
         ),
-    ) ,
-    );
+      );
   }
 }

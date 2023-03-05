@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:storm_in_your_city_alpha/src/pages/home.dart';
 import 'package:storm_in_your_city_alpha/src/pages/login_Page.dart';
 
 main() {
@@ -10,11 +11,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: LoginPage(),
-      ),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const LoginPage(),
+        '/page': (context) => const Style(),
+      },
     );
   }
 }
+
+
