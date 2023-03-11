@@ -1,28 +1,27 @@
 import 'package:flutter/material.dart';
-import '../components/buttom-right.dart';
 
+import 'buttom-right.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+class View extends StatelessWidget {
+  const View({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: ListView(
+    return ListView(
       children: [
-        SizedBox(
-          width: 220,
-          height: 220,
-          child: Image.asset('assets/images/logo1.png'),
+        Padding(
+          padding: const EdgeInsets.all(80.0),
+          child: SizedBox(
+            width: 90,
+            height: 90,
+            child: Image.asset('assets/icons/telegram.png'),
+          ),
         ),
         Container(
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color: Colors.white,
-              border: Border.all(
-                color: Colors.black,
-                style: BorderStyle.solid
-              )),
+              color: const Color.fromARGB(221, 255, 255, 255),
+              ),
             margin: const EdgeInsets.all(20),
             padding: const EdgeInsets.all(15),
             height: 300,
@@ -42,19 +41,19 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               TextField(
+               style: const TextStyle(fontSize: 18.0),
                 decoration: InputDecoration(
                     labelText: 'Insert',
-                    fillColor: Colors.black26,
                     contentPadding: const EdgeInsets.all(10),
                     border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(12))),
+                        borderRadius: BorderRadius.circular(25),),
+                        ),
               ),
               const ButtomRight(),
             ],
           ),
         ),
       ],
-    ),
-      );
+    );
   }
 }

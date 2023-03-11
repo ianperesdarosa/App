@@ -69,6 +69,8 @@ flutter:
     - assets/icons/right-arrow.png
     - assets/icons/right-arrow-M.png
     - assets/images/back-chuva.jpg
+    - assets/icons/paper-airplane.png
+    - assets/icons/telegram.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

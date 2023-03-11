@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../components/buttom-left.dart';
-import '../components/view_Temp.dart';
+import '../widgets/buttom-left.dart';
+import '../widgets/view_Temp.dart';
 
 
 
@@ -29,14 +29,14 @@ class Style extends StatelessWidget {
         SizedBox(
           width: double.infinity,
           height: double.infinity,
-          child: Image.asset('assets/images/back-chuva.jpg', fit: BoxFit.cover,
+          child: Image.network('https://image.winudf.com/v2/image1/Y29tLkFsRmFqckRldmVsb3Blci5CbGFja1dhbGxwYXBlcl9zY3JlZW5fN18xNTU0OTc1NjEwXzA5Nw/screen-6.jpg?fakeurl=1&type=.jpg', fit: BoxFit.cover,
           ), 
         ),
           Container(
           width: double.infinity,
           height: double.infinity,
           decoration: const BoxDecoration(
-            color: Color.fromRGBO(0, 0, 0, 0.450)
+            color: Color.fromRGBO(0, 0, 0, 0.226)
           ),
         ),
           const Home(),
